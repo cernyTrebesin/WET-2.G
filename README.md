@@ -1,1 +1,1 @@
-*** Vítejte v repozitáři k předmětu Webové technologie
+### Vítejte v repozitáři k předmětu Webové technologie
