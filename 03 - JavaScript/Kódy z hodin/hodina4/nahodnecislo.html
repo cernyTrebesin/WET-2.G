@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cislo = Math.floor(Math.random() * 10);
+        let hadej = window.prompt("Hádej náhodné číslo");
+        hadej = hadej * 1;
+        while(hadej !== cislo){
+            alert("Špatně, zkus to znovu")
+            hadej = window.prompt("Hádej náhodné číslo");
+            hadej = hadej * 1;
+        }
+        
+        alert("Gratuluju, správné číslo bylo " + cislo)
+    </script>
+</body>
+</html>

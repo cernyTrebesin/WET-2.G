@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="pr1">Spusť 1</button>
+    <button id="pr2">Stusť 2</button>
+    <button id="pr3">Stusť 3</button>
+    <button id="pr4">Stusť 4</button>
+    <button id="pr5">Spusť 5</button>
+
+    <script>
+        let tlacitko5 = document.querySelector("#pr5");
+        tlacitko5.addEventListener("click", priklad5);
+        function priklad5(){
+            let a = window.prompt("Zadej číslo a");
+            let b = window.prompt("Zadej číslo b");
+            if(b%a === 0){
+                alert("ano");
+            }else{
+                alert("ne");
+            }
+        }
+
+        let tlacitko4 = document.querySelector("#pr4");
+        tlacitko4.addEventListener("click", priklad4);
+
+        function priklad4(){
+            let rok = window.prompt("Zadej rok");
+            if(rok % 4 === 0 && rok % 100 !== 0){
+                alert("Rok je přestupný");
+            }else{
+                alert("Rok není přestupný");
+            }
+        }
+
+        let tlacitko3 = document.querySelector("#pr3");
+        tlacitko3.addEventListener("click", priklad3);
+
+        function priklad3(){
+            let cislo = window.prompt("Zadejte číslo");
+            if(cislo<0){
+                cislo = cislo * -1;
+            }
+            alert(cislo);
+        }
+
+        let tlacitko2 = document.querySelector("#pr2");
+        tlacitko2.addEventListener("click", priklad2);
+
+        function priklad2(){
+            let vek = window.prompt("Zadej věk");
+
+            if(vek<0){
+                alert("Věk nemůže být záporný");
+            }else if(vek > 0 && vek <= 14){
+                alert("Dítě");
+            }else if(vek > 14 && vek <= 17){
+                alert("Dospívající");
+            }else{
+                alert("Dospělý")
+            }
+        }
+        
+        let tlacitko1 = document.querySelector("#pr1");
+        tlacitko1.addEventListener("click", priklad1);
+
+        function priklad1(){
+            let a = window.prompt("Zadej první číslo");
+            let b = window.prompt("Zadej druhé číslo");
+
+            if(a>b){
+                alert(a);
+            }else if(b>a){
+                alert(b);
+            }else{
+                alert("Čísla jsou stejná");
+            }
+        }
+
+
+    </script>
+</body>
+</html>
