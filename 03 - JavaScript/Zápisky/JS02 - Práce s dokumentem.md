@@ -73,6 +73,8 @@ mujText.style.color = "pink"
 
 ---
 
+## Přiřazení uživatelského vstupu do proměnné
+
 ### value
 
 Pomocí value mohu získat vstup od uživatele pomocí formulářového pole
@@ -91,4 +93,28 @@ mujText.innerText = input.value
 let textInputu = document.querySelector("#input").value
 ```
 
-Jak tyto data odeslat, aby je program dokázal využít si ukážeme později
+---
+
+### window.prompt
+
+Na stránce nám vyskočí vyskakovací okno, které nás vyzve k zadání hodnoty, tuto hodnotu můžeme předat do proměnné
+
+```JavaScript
+let vstup = window.prompt("Zadej hodnotu")
+```
+
+Někdy mohou nastat problémy při předání číselné hodnoty, že JS nepozná, zda se jedná o číslo. Pomocí jednoduché matematické operace můžeme definovat proměnnou jako číslo
+
+```JavaScript
+let vstup = window.prompt("Zadej hodnotu")
+// vynásobení čísla jedničkou (hodnota se nezmění)
+vstup *= 1 // alternativně vstup = vstup * 1
+```
+
+### alert
+
+Podobně jako `window.prompt` vyskočí na stránce vyskakovací okno, s rozdílem, že alert je pouze oznamovací a nepožaduje po nás nějakou hodnotu
+
+```JavaScript
+alert("Hello World!")
+```
