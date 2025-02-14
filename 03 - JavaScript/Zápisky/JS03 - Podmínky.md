@@ -4,7 +4,7 @@ _"Pokud něco platí, proveď nějaký kód"_
 
 ## Synatexe podmínek
 
-K vytvoření podmínky v JS potřebuju slovíčko `if`, poté do kulatých závorek napíšu danou podmínku, která musí být splněna, aby byl vykonán nějaký blok kódu, který se píše mezi složené závorky `{ }`
+K vytvoření podmínky v JS potřebuju slovíčko `if`, poté do kulatých závorek napíšu danou podmínku, která musí být splněna, aby byl vykonán nějaký blok kódu, který se píše mezi složené závorky `{ }`.
 
 ```JavaScript
 if(podmínka){
@@ -14,7 +14,7 @@ if(podmínka){
 
 ## Porovnávání v podmínkách
 
-Pro porovnávání používáme následující znaky
+Pro porovnávání používáme následující znaky.
 
 -   `===` rovná se
 -   `!==` nerovná se
@@ -23,9 +23,9 @@ Pro porovnávání používáme následující znaky
 -   `<` je menší než
 -   `<=` je menší než nebo rovno
 
-Pomocí `===` můžeme porovnávat jak čísla tak i řetězce
+Pomocí `===` můžeme porovnávat jak čísla tak i řetězce.
 
-V podmínce může být zapsána pouze jediná hodnota, např. `if(proměnná)`, je to zkrácený zápis pro `if(proměnná === true)`
+V podmínce může být zapsána pouze jediná hodnota, např. `if(proměnná)`, je to zkrácený zápis pro `if(proměnná === true)`.
 
 ### Příklad podmínky
 
@@ -39,7 +39,7 @@ if(vstup > 5){
 
 ## else if
 
-Pomocí `else if()` můžeme rozšířit podmínku
+Pomocí `else if()` můžeme rozšířit podmínku.
 
 ```JavaScript
 vstup = window.prompt("Zadej číslo")
@@ -52,11 +52,11 @@ if(vstup > 5){
 }
 ```
 
-Počet kolikrát `else if` můžeme použít není omezen
+Počet kolikrát `else if` můžeme použít není omezen.
 
 ## else
 
-Další případ rozšíření podmínky. Dá se přeložit jako _"v ostatních případech"_ a blok kódu je proveden, zda není splněná žádná z předchozích `if` a `else if` podmínek
+Další případ rozšíření podmínky. Dá se přeložit jako _"v ostatních případech"_ a blok kódu je proveden, zda není splněná žádná z předchozích `if` a `else if` podmínek.
 
 ```JavaScript
 vstup = window.prompt("Zadej číslo")
@@ -91,6 +91,6 @@ switch (výraz) {
 }
 ```
 
-`break` ukončí provádění switch
+`break` ukončí provádění switch.
 
-`default` symbolizuje část kódu, která se vykoná, pokud neodpovídá žádná hodnota v case (nevyžaduje `break`)
+`default` symbolizuje část kódu, která se vykoná, pokud neodpovídá žádná hodnota v case (nevyžaduje `break`).

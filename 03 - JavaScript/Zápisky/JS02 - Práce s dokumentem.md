@@ -53,16 +53,16 @@ JavaScript:
 
 ```JavaScript
 let mujText = querySelector("#text");
-mujText.innerText = "Proč je AGP můj nejoblíbenější předmět:"
+mujText.innerText = "Proč je matematika můj nejoblíbenější předmět:"
 ```
 
-Tento kód změnil text `Proč je ICT můj nejoblíbenější předmět:` na `Proč je AGP můj nejoblíbenější předmět:`
+Tento kód změnil text `Proč je matematika můj nejoblíbenější předmět:` na `Proč je WET můj nejoblíbenější předmět:`.
 
 ---
 
 ### style
 
-Pomocí style můžeme upravovat nějakou CSS vlastnost daného prvku
+Pomocí style můžeme upravovat nějakou CSS vlastnost daného prvku.
 
 Syntaxe: `promenna.style.vlastnost = "hodnota"`
 
@@ -77,7 +77,7 @@ mujText.style.color = "pink"
 
 ### value
 
-Pomocí value mohu získat vstup od uživatele pomocí formulářového pole
+Pomocí value mohu získat vstup od uživatele pomocí formulářového pole.
 
 ```JavaScript
 // nejdříve si musím propojit prvek s proměnnou
@@ -97,13 +97,13 @@ let textInputu = document.querySelector("#input").value
 
 ### window.prompt
 
-Na stránce nám vyskočí vyskakovací okno, které nás vyzve k zadání hodnoty, tuto hodnotu můžeme předat do proměnné
+Na stránce nám vyskočí vyskakovací okno, které nás vyzve k zadání hodnoty, tuto hodnotu můžeme předat do proměnné.
 
 ```JavaScript
 let vstup = window.prompt("Zadej hodnotu")
 ```
 
-Někdy mohou nastat problémy při předání číselné hodnoty, že JS nepozná, zda se jedná o číslo. Pomocí jednoduché matematické operace můžeme definovat proměnnou jako číslo
+Někdy mohou nastat problémy při předání číselné hodnoty, že JS nepozná, zda se jedná o číslo. Pomocí jednoduché matematické operace můžeme definovat proměnnou jako číslo.
 
 ```JavaScript
 let vstup = window.prompt("Zadej hodnotu")
@@ -113,7 +113,7 @@ vstup *= 1 // alternativně vstup = vstup * 1
 
 ### alert
 
-Podobně jako `window.prompt` vyskočí na stránce vyskakovací okno, s rozdílem, že alert je pouze oznamovací a nepožaduje po nás nějakou hodnotu
+Podobně jako `window.prompt` vyskočí na stránce vyskakovací okno, s rozdílem, že alert je pouze oznamovací a nepožaduje po nás nějakou hodnotu.
 
 ```JavaScript
 alert("Hello World!")

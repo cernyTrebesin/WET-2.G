@@ -1,46 +1,52 @@
 # Úvod do JS, práce s proměnnými
+
 ## Co je to JavaScript?
 
-* JavaScript je dynamický programovací jazyk, který přidává interaktivitu a dynamiku na webové stránky.
-* Hlavní role JavaScriptu na webové stránce
-    * Reagovat na akce uživatele (např. kliknutí na tlačítko).
-    * Validovat formuláře nebo zpracovávat data přímo na straně uživatele.
-    * Animovat prvky a měnit obsah stránky bez nutnosti jejího obnovení.
-* Rozdíl oproti HTML a CSS:
-    * HTML definuje strukturu stránky.
-    * CSS určuje její vzhled.
-    * JavaScript zajišťuje interaktivitu a logiku.
-* Význam v moderním webu:
-    * JavaScript pohání většinu interaktivních funkcí, které na webech používáme.
+-   JavaScript je dynamický programovací jazyk, který přidává interaktivitu a dynamiku na webové stránky.
+-   Hlavní role JavaScriptu na webové stránce:
+    -   Reagovat na akce uživatele (např. kliknutí na tlačítko).
+    -   Validovat formuláře nebo zpracovávat data přímo na straně uživatele.
+    -   Animovat prvky a měnit obsah stránky bez nutnosti jejího obnovení.
+-   Rozdíl oproti HTML a CSS:
+    -   HTML definuje strukturu stránky.
+    -   CSS určuje její vzhled.
+    -   JavaScript zajišťuje interaktivitu a logiku.
+-   Význam v moderním webu:
+    -   JavaScript pohání většinu interaktivních funkcí, které na webech používáme.
 
 ## Vládání JS do HTML
-* Přímo v HTML
+
+-   Přímo v HTML
+
 ```HTML
 <script>
     console.log("Hello world!");
-</script>    
+</script>
 ```
 
-* Externí soubor
+-   Externí soubor
+
 ```HTML
 <script src="script.js"></script>
 ```
+
 ```JavaScript
 console.log("Hello world!");
 ```
 
 ## Proměnné - způsoby vytvoření
 
-Existují 3 způsoby zápisu proměnných
+Existují 3 způsoby zápisu proměnných.
 
 ### let
+
 Základní proměnná, kterou později lze přespsat
 
 ```JavaScript
 let brainrot = "skibidi"
 ```
 
-Později můžeme tuto hodnotu přepsat (není potřeba znovu deklarovat proměnnou)
+Později můžeme tuto hodnotu přepsat (není potřeba znovu deklarovat proměnnou).
 
 ```JavaScript
 brainrot = "mango"
@@ -62,7 +68,7 @@ ChatGPT strašně rád hází kódy s tímto způsobem deklarace proměnných, t
 
 Je možné taky vidět ve starých kódech na internetu.
 
-Funguje podobně jako let
+Funguje podobně jako let.
 
 ```JavaScript
 var brainrot = "skibidi"
@@ -72,7 +78,7 @@ var brainrot = "skibidi"
 
 ### string
 
-Text, psaný v uvozovkách
+Text, psaný v uvozovkách.
 
 ```JavaScript
 let jmeno = "Spytihněv"
@@ -80,7 +86,7 @@ let jmeno = "Spytihněv"
 
 ### int
 
-Celé číslo (bez desetinné tečky), psáno bez uvozovek
+Celé číslo (bez desetinné tečky), psáno bez uvozovek.
 
 ```JavaScript
 let hodnota = 420
@@ -88,7 +94,7 @@ let hodnota = 420
 
 ### float / double
 
-Desetinné číslo, psáno bez uvozovek (používáme desetinnou tečku)
+Desetinné číslo, psáno bez uvozovek (používáme desetinnou tečku).
 
 ```JavaScript
 let hodnota = 3.14
@@ -96,7 +102,7 @@ let hodnota = 3.14
 
 ### boolean
 
-Hodnota true/false
+Hodnota true/false.
 
 ```JavaScript
 let chillGuy = true
@@ -106,7 +112,7 @@ let chillGuy = true
 
 ### Práce s textem
 
-Text můžeme spojovat
+Text můžeme spojovat.
 
 ```JavaScript
 let text1 = "Low"
@@ -130,7 +136,7 @@ Nebo pomocí interpolace
 Console.Log("${text1} ${text2} ${text3}")
 ```
 
-Když používáme zápis pomocí interpolace, musíme každou proměnnou zapsat do složených závorek (pravý alt + b/n) a přidat na začátek $ (pravý alt + ů) 
+Když používáme zápis pomocí interpolace, musíme každou proměnnou zapsat do složených závorek (pravý alt + b/n) a přidat na začátek $ (pravý alt + ů)
 
 Tento složený text lze i uložit do samostatné proměnné, kterou poté můžeme vypsat
 
@@ -151,20 +157,25 @@ let b = 5
 V JavaScriptu můžeme:
 
 sčítat (+)
+
 ```JavaScript
 console.Log(a+b)
 ```
+
 odečítat (-)
+
 ```JavaScript
 console.Log(a-b)
 ```
 
-násobit (*)
+násobit (\*)
+
 ```JavaScript
 console.Log(a*b)
 ```
 
 dělit (/)
+
 ```JavaScript
 console.Log(a/b)
 ```
