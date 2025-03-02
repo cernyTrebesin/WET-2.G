@@ -46,14 +46,14 @@ innerText mění text v prvku.
 HTML:
 
 ```HTML
-<h1 id="text">Proč je ICT můj nejoblíbenější předmět:</h1>
+<h1 id="text">Proč je Matematika můj nejoblíbenější předmět:</h1>
 ```
 
 JavaScript:
 
 ```JavaScript
 let mujText = querySelector("#text");
-mujText.innerText = "Proč je matematika můj nejoblíbenější předmět:"
+mujText.innerText = "Proč je WET můj nejoblíbenější předmět:"
 ```
 
 Tento kód změnil text `Proč je matematika můj nejoblíbenější předmět:` na `Proč je WET můj nejoblíbenější předmět:`.
