@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = window.prompt("Zadej hodnotu a");
+        let b = window.prompt("Zadej hodnotu b");
+        let c = window.prompt("Zadej hodnotu c");
+        a *= 1; // a = a * 1
+        b *= 1;
+        c *= 1;
+        let dis = b*b - 4 * a * c;
+
+        if(dis > 0){
+            alert("Řešení 1: " + (-b + Math.sqrt(dis)) / (2 * a)
+                + "\nŘešení 2: " + (-b - Math.sqrt(dis)) / (2 * a)
+            );
+        }else if(dis === 0){
+            alert("Řešení 1: " + (-b) / (2 * a));
+        }else{
+            alert("Rovnice nemá řešení")
+        }
+        
+
+    </script>
+</body>
+</html>
