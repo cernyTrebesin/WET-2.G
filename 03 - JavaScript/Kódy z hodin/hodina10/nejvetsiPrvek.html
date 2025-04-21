@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cisla = [5, 9, 7, 11, 15, 2];
+        let max = cisla[0];
+
+        for(let i = 1; i < cisla.length; i++){
+            if(max < cisla[i]){
+                max = cisla[i]
+            }
+        }
+        alert("Největší číslo v poli je " + max)
+
+        /*
+        cisla.sort((a,b)=>a-b)
+        alert(cisla)
+        cisla.reverse();
+        alert(cisla[0])
+        */
+    </script>
+</body>
+</html>

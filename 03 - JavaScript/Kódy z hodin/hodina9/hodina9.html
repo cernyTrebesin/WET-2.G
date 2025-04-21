@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let velikost = +prompt("Zadej velikost pole"); // uživatel zadává velikost
+        let cisla = []; // inicializace pole
+        
+        for(let i = 0; i < velikost; i++){ // musíme indexovat prvky od 0, proto začínáme na nule
+            let a = +prompt("Zadej prvek s indexem " + i); // do každého uživatel zadá číslo
+            if(a % 2 === 0){
+                cisla.push(a);
+            }
+        }
+
+        alert(cisla)
+    </script>
+</body>
+</html>
